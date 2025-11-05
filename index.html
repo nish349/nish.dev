@@ -3,20 +3,27 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+         name="description"
+         content="I'm Nish, a Full Stack Web Developer creating modern, scalable web apps with React, Node.js, and PostgreSQL. Passionate about design and performance." />
+      <meta property="og:title" content="Nish S. | Full Stack Developer" />
+      <meta property="og:description" content="Building scalable, modern web applications with React, Node.js, and PostgreSQL." />
+      <meta property="og:image" content="./assets/img/brand-cover.png" />
+      <meta property="og:type" content="website" />
 
       <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+      <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/x-icon" />
 
       <!--=============== FONT ===============-->
-      <!-- <link rel="preload" href="./assets/font/BeVietnamPro-Regular.woff2" as="font" type="font/woff2" crossorigin /> -->
+      <link rel="preload" href="./assets/font/archivo-v25-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
 
       <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="" />
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
 
       <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="./assets/css/styles.css" />
+      <link rel="stylesheet" href="./css/styles.css" />
 
-      <title>NishS</title>
+      <title>Nish S. | Full Stack Web Developer</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
@@ -39,6 +46,9 @@
                   </li>
                   <li class="nav__item">
                      <a href="#about" class="nav__link">About Me</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#services" class="nav__link">Services</a>
                   </li>
                   <li class="nav__item">
                      <a href="#projects" class="nav__link">Projects</a>
@@ -74,7 +84,7 @@
                <h1 class="home__name">Nish</h1>
                <div class="home__perfil">
                   <div class="home__image">
-                     <img src="./assets/img/Test.jpg" alt="Nish S. Cover Image" class="home__img" />
+                     <img src="./assets/img/author-img.jpg" alt="Nish S. Cover Image" class="home__img" />
                      <div class="home__shadow"></div>
 
                      <img src="./assets/img/curved-arrow.svg" alt="design art for decoration" class="home__arrow" />
@@ -83,13 +93,13 @@
                      <div class="geometric-box"></div>
                   </div>
                   <div class="home__social">
-                     <a href="#" target="_blank" class="home__social-link">
+                     <a href="https://github.com/nish349" target="_blank" class="home__social-link">
                         <i class="ri-github-fill"></i>
                      </a>
-                     <a href="#" target="_blank" class="home__social-link">
+                     <a href="https://www.linkedin.com/in/87993157/" target="_blank" class="home__social-link">
                         <i class="ri-linkedin-box-fill"></i>
                      </a>
-                     <a href="#" target="_blank" class="home__social-link">
+                     <a href="#contact" target="_blank" class="home__social-link">
                         <i class="ri-mail-line"></i>
                      </a>
                   </div>
@@ -97,8 +107,7 @@
 
                <div class="home__info">
                   <p class="home__description">
-                     <b>FullStack Developer</b>, with knowledge in web development and design, I offer the best projects resulting in
-                     quality work.
+                     <b>Full-Stack Developer</b>. Turning Complex Problems into Clean Code and Seamless User Experiences.
                   </p>
 
                   <a href="#about" class="home__scroll">
@@ -121,27 +130,43 @@
 
                <div class="about__perfil">
                   <div class="about__image">
-                     <img src="./assets/img/Image-hero.png" alt="" class="about__img" />
+                     <img src="./assets/img/brand-cover.png" alt="Brand-Cover" class="about__img" />
 
                      <div class="about__shadow"></div>
 
                      <div class="geometric-box"></div>
-                     <img src="assets/img/random-lines.svg" alt="" class="about__line" />
+                     <img src="assets/img/random-lines.svg" alt="for-decoration" class="about__line" />
                      <div class="about__box"></div>
                   </div>
                </div>
 
                <div class="about__info">
                   <p class="about__description">
-                     Passionate about creating <b>Web Pages</b> with <b>UI/UX User Interface</b>, I have years of experience and many
-                     clients are happy with the projects carried out.
+                     Passionate about building modern, <b>responsive</b>, and efficient <b>Web Applications</b> with a strong focus on
+                     <b>clean design</b> and <b>seamless user experience</b>
                   </p>
 
-                  <ul class="about__list">
-                     <li class="about__item">
-                        <b>My Skills Are:</b> HTML, CSS, JavaScript, React, Git & GitHub, Bootstrap, Flutter & Figma.
-                     </li>
-                  </ul>
+                  <div class="skills">
+                     <span class="my-skill-heading"><b>My Skills Are:</b></span>
+                     <div class="skill-sections">
+                        <ul class="skills__list">
+                           <li class="icon-set"><img src="./assets/icons/html.svg" alt="HTML Icon" /> HTML</li>
+                           <li class="icon-set"><img src="./assets/icons/css3.svg" alt="CSS Icon" /> CSS</li>
+                           <li class="icon-set"><img src="./assets/icons/javascript.svg" alt="JavaScript Icon" /> JavaScript</li>
+                           <li class="icon-set"><img src="./assets/icons/react.svg" alt="React Icon" /> React</li>
+                           <li class="icon-set"><img src="./assets/icons/nextjs.svg" alt="Next.js Icon" /> Next.js</li>
+                           <li class="icon-set"><img src="./assets/icons/react-native.svg" alt="React Native Icon" /> React Native</li>
+                           <li class="icon-set"><img src="./assets/icons/redux.svg" alt="Redux Icon" /> Redux</li>
+                           <li class="icon-set"><img src="./assets/icons/express-js.svg" alt="Express Icon" /> Express</li>
+                           <li class="icon-set"><img src="./assets/icons/nodejs.svg" alt="Node.js Icon" /> Node.js</li>
+                           <li class="icon-set"><img src="./assets/icons/postgresql.svg" alt="PostgreSQL Icon" /> PostgreSQL</li>
+                           <li class="icon-set"><img src="./assets/icons/typescript.svg" alt="TypeScript Icon" /> TypeScript</li>
+                           <li class="icon-set"><img src="./assets/icons/mongodb.svg" alt="MongoDB Icon" /> MongoDB</li>
+                           <li class="icon-set"><img src="./assets/icons/figma.svg" alt="Figma Icon" /> Figma</li>
+                           <li class="icon-set"><img src="./assets/icons/git.svg" alt="Git Icon" /> Git</li>
+                        </ul>
+                     </div>
+                  </div>
 
                   <div class="about__buttons">
                      <a href="#contact" class="button"> <i class="ri-send-plane-line"></i> Contact Me </a>
@@ -155,12 +180,49 @@
          </section>
 
          <!--==================== SERVICES ====================-->
-         <section class="services section">
+         <section class="services section" id="services">
             <h2 class="section__title-2">
                <span>Services.</span>
             </h2>
 
+            <!-- 1.Website Development -->
             <div class="services__container container grid">
+               <article class="services__card">
+                  <div class="services__border"></div>
+                  <div class="services__content">
+                     <div class="services__icon">
+                        <div class="services__box"></div>
+
+                        <i class="ri-code-box-line"></i>
+                     </div>
+
+                     <h2 class="services__title">Website Development</h2>
+                     <p class="services__description">
+                        Crafting beautiful, responsive websites from scratch. I turn your ideas into a professional, engaging online
+                        presence.
+                     </p>
+                  </div>
+               </article>
+
+               <!-- 2. Web/Mobile App Development -->
+               <article class="services__card">
+                  <div class="services__border"></div>
+                  <div class="services__content">
+                     <div class="services__icon">
+                        <div class="services__box"></div>
+
+                        <i class="ri-smartphone-line"></i>
+                     </div>
+
+                     <h2 class="services__title">Mobile App</h2>
+                     <p class="services__description">
+                        Building powerful, custom web applications. From internal tools to SaaS platforms, I deliver high-performance
+                        solutions.
+                     </p>
+                  </div>
+               </article>
+
+               <!-- 3. UI/UX & Frontend -->
                <article class="services__card">
                   <div class="services__border"></div>
                   <div class="services__content">
@@ -169,39 +231,109 @@
                         <i class="ri-layout-4-line"></i>
                      </div>
 
-                     <h2 class="services__title">Web Design</h2>
+                     <h2 class="services__title">UI/UX & Frontend</h2>
                      <p class="services__description">
-                        Beautiful and elegant designs with interfaces that are intuitive, efficient and pleasant to use for the user.
+                        Designing intuitive, user-friendly interfaces (UI/UX) and coding pixel-perfect, responsive frontend experiences.
                      </p>
                   </div>
                </article>
 
+               <!-- 4. Maintenance & Optimization -->
                <article class="services__card">
                   <div class="services__border"></div>
                   <div class="services__content">
                      <div class="services__icon">
                         <div class="services__box"></div>
-                        <i class="ri-code-box-line"></i>
+                        <i class="ri-wrench-line"></i>
                      </div>
 
-                     <h2 class="services__title">Development</h2>
+                     <h2 class="services__title">Maintenance & Optimization</h2>
                      <p class="services__description">
-                        Custom web development tailored to your specifications, designed to provide a flawless user experience.
+                        Keeping your site fast, secure, and up-to-date. I handle updates, security hardening, and performance speed-ups.
                      </p>
                   </div>
                </article>
 
+               <!-- 5. API & Third-Party Integration -->
                <article class="services__card">
                   <div class="services__border"></div>
                   <div class="services__content">
                      <div class="services__icon">
                         <div class="services__box"></div>
-                        <i class="ri-smartphone-line"></i>
+                        <i class="ri-webhook-line"></i>
                      </div>
 
-                     <h2 class="services__title">Mobile App</h2>
+                     <h2 class="services__title">API & Third-Party Integration</h2>
                      <p class="services__description">
-                        Design and transform website projects into mobile apps to provide a seamless user experience..
+                        Connecting your site to essential tools. I handle API development and integration for payments, CRMs, social media,
+                        and more.
+                     </p>
+                  </div>
+               </article>
+
+               <!-- 6. E-Commerce Solutions -->
+               <article class="services__card">
+                  <div class="services__border"></div>
+                  <div class="services__content">
+                     <div class="services__icon">
+                        <div class="services__box"></div>
+                        <i class="ri-shopping-bag-3-line"></i>
+                     </div>
+
+                     <h2 class="services__title">E-Commerce Solutions</h2>
+                     <p class="services__description">
+                        Building secure, scalable, and high-converting e-commerce stores. I create custom online shops that drive sales.
+                     </p>
+                  </div>
+               </article>
+
+               <!-- 7. Deployment & DevOps -->
+               <article class="services__card">
+                  <div class="services__border"></div>
+                  <div class="services__content">
+                     <div class="services__icon">
+                        <div class="services__box"></div>
+                        <i class="ri-install-line"></i>
+                     </div>
+
+                     <h2 class="services__title">Deployment & DevOps</h2>
+                     <p class="services__description">
+                        Handling all your deployment needs. I set up secure hosting, automate builds (CI/CD), and ensure your site goes live
+                        smoothly.
+                     </p>
+                  </div>
+               </article>
+
+               <!-- 8. Technical Consulting -->
+               <article class="services__card">
+                  <div class="services__border"></div>
+                  <div class="services__content">
+                     <div class="services__icon">
+                        <div class="services__box"></div>
+                        <i class="ri-customer-service-line"></i>
+                     </div>
+
+                     <h2 class="services__title">Technical Consulting</h2>
+                     <p class="services__description">
+                        Providing expert guidance on web strategy, technology stacks, and project roadmaps to help you make the best
+                        decisions.
+                     </p>
+                  </div>
+               </article>
+
+               <!-- 9. SEO & Analytics -->
+               <article class="services__card">
+                  <div class="services__border"></div>
+                  <div class="services__content">
+                     <div class="services__icon">
+                        <div class="services__box"></div>
+                        <i class="ri-seo-line"></i>
+                     </div>
+
+                     <h2 class="services__title">SEO & Analytics</h2>
+                     <p class="services__description">
+                        Boosting your visibility with technical SEO. I optimize your site for search engines and set up analytics to track
+                        results.
                      </p>
                   </div>
                </article>
@@ -355,10 +487,10 @@
                      <span>Contact Me.</span>
                   </h2>
 
-                  <p class="contact__description-1">I will read all emails. Send me any message you want and I'll get back to you.</p>
+                  <p class="contact__description-1">Have a project or question? I personally review every message.</p>
 
                   <p class="contact__description-2">
-                     I need your <b>Name</b> and <b>Email Address</b>, but you won't receive anything other than your reply.
+                     Just drop your <b>Name</b> and <b>Email Address</b> below, and I’ll get back to you as soon as possible.
                   </p>
 
                   <div class="geometric-box"></div>
@@ -400,20 +532,28 @@
                   <img src="./assets/img/curved-arrow.svg" alt="" class="contact__social-arrow" />
                   <div class="contact__social-data">
                      <div>
-                        <p class="contact__social-description-1">Does not send emails</p>
-                        <p class="contact__social-description-2">Write me on my social networks</p>
+                        <p class="contact__social-description-1">Not into forms?</p>
+                        <p class="contact__social-description-2">Feel free to message me on my socials:</p>
                      </div>
 
                      <div class="contact__social-links">
-                        <a href="#" target="_blank" class="contact__social-link">
-                           <i class="ri-facebook-circle-line"></i>
+                        <a href="https://x.com/phoenix_eos_" target="_blank" aria-label="Twitter Profile" class="contact__social-link">
+                           <i class="ri-twitter-x-line"></i>
                         </a>
 
-                        <a href="#" target="_blank" class="contact__social-link">
+                        <a
+                           href="https://www.instagram.com/eos_phoenix/"
+                           target="_blank"
+                           aria-label="Instagram Profile"
+                           class="contact__social-link">
                            <i class="ri-instagram-line"></i>
                         </a>
 
-                        <a href="#" target="_blank" class="contact__social-link">
+                        <a
+                           href="https://www.linkedin.com/in/87993157/"
+                           target="_blank"
+                           aria-label="LinkedIn Profile"
+                           class="contact__social-link">
                            <i class="ri-linkedin-box-line"></i>
                         </a>
                      </div>
@@ -453,12 +593,12 @@
       </a>
 
       <!--=============== SCROLLREVEAL ===============-->
-      <script type="text/javascript" src="./assets/js/scrollreveal.min.js"></script>
+      <script type="text/javascript" src="./js/scrollreveal.min.js"></script>
 
       <!--=============== EMAIL JS ===============-->
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
-      <script type="text/javascript" src="assets/js/main.js"></script>
+      <script type="text/javascript" src="./js/main.js"></script>
    </body>
 </html>

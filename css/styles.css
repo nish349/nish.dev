@@ -423,12 +423,6 @@
    top: 0.5rem;
 }
 
-.about__list {
-   list-style: square;
-   color: var(--title-color);
-   margin-bottom: 3rem;
-}
-
 .about__buttons {
    display: flex;
    justify-content: center;
@@ -1137,8 +1131,8 @@
       left: -3rem;
       top: 14px;
    }
-   .about__list {
-      margin-bottom: 5rem;
+   .skill-sections {
+      margin: 1.5rem 0 1.5rem 0;
    }
    .about__buttons {
       justify-content: initial;
@@ -1257,5 +1251,104 @@
    }
    .scrollup {
       right: 3rem;
+   }
+}
+
+.skills {
+   margin-top: 15px;
+}
+
+/* ---------------------- */
+/* LIGHT THEME (Default)  */
+/* ---------------------- */
+.skills__list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 10px;
+}
+
+.skills__list .about__item {
+   width: 100%;
+   font-weight: 600;
+   font-size: 1rem;
+   margin-bottom: 5px;
+   color: #111;
+}
+
+.icon-set {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   background: rgba(255, 255, 255, 0.7);
+   padding: 6px 12px;
+   border-radius: 8px;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+   transition: all 0.3s ease; /* smooth theme transition */
+   cursor: default;
+   font-size: 0.95rem;
+   font-weight: 500;
+   color: #222;
+}
+
+.skill-sections {
+   margin: 1.5rem 0 1.5rem 0;
+}
+
+/* Hover effect (Light) */
+.icon-set:hover {
+   transform: translateY(-2px);
+   background: #fff;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon style */
+.icon-set img {
+   width: 25px;
+   height: 25px;
+   flex-shrink: 0;
+   transition: transform 0.2s ease;
+}
+
+/* Icon hover zoom */
+.icon-set:hover img {
+   transform: scale(1.1);
+}
+
+/* ---------------------- */
+/* DARK THEME (Custom Toggle) */
+/* ---------------------- */
+.dark-theme .icon-set {
+   color: #f0f0f0;
+   background: rgba(255, 255, 255, 0.08);
+   box-shadow: 0 1px 3px rgba(255, 255, 255, 0.05);
+   transition: all 0.3s ease;
+}
+
+.dark-theme .icon-set:hover {
+   background: rgba(255, 255, 255, 0.15);
+   box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* For the heading text */
+.dark-theme .skills__list .about__item {
+   color: #fff;
+}
+
+/* ---------------------- */
+/* RESPONSIVE DESIGN */
+/* ---------------------- */
+@media (max-width: 768px) {
+   .icon-set {
+      padding: 5px 10px;
+      font-size: 0.85rem;
+   }
+
+   .icon-set img {
+      width: 22px;
+      height: 22px;
    }
 }
