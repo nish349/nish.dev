@@ -1,33 +1,49 @@
-/* Google Fonts self-hosted locally as .woff2 for GDPR compliance — no external CDN calls */
+/*======================================================================================*\
+- Google Fonts self-hosted locally as .woff2 for GDPR compliance — no external CDN calls
+- Browser Compatibility: Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+
+*======================================================================================*/
 
+/* archivo-regular - latin */
 @font-face {
-   font-family: "Be Vietnam Pro";
-   src: url("/assets/font/BeVietnamPro-Regular.woff2") format("woff2");
+   font-display: swap;
+   font-family: "Archivo";
+   font-style: normal;
    font-weight: 400;
-   font-style: normal;
-   font-display: swap;
+   src: url("/assets/font/archivo-v25-latin-regular.woff2") format("woff2");
 }
 
+/* archivo-500 - latin */
 @font-face {
-   font-family: "Be Vietnam Pro";
-   src: url("/assets/font/BeVietnamPro-Medium.woff2") format("woff2");
+   font-display: swap;
+   font-family: "Archivo";
+   font-style: normal;
    font-weight: 500;
-   font-style: normal;
-   font-display: swap;
+   src: url("/assets/font//archivo-v25-latin-500.woff2") format("woff2");
 }
 
+/* archivo-600 - latin */
 @font-face {
-   font-family: "Be Vietnam Pro";
-   src: url("/assets/font/BeVietnamPro-SemiBold.woff2") format("woff2");
+   font-display: swap;
+   font-family: "Archivo";
+   font-style: normal;
    font-weight: 600;
-   font-style: normal;
-   font-display: swap;
+   src: url("/assets/font/archivo-v25-latin-600.woff2") format("woff2");
 }
 
+/* archivo-700 - latin */
 @font-face {
-   font-family: "Be Vietnam Pro";
-   src: url("/assets/font/BeVietnamPro-Bold.woff2") format("woff2");
-   font-weight: 700;
-   font-style: normal;
    font-display: swap;
+   font-family: "Archivo";
+   font-style: normal;
+   font-weight: 700;
+   src: url("/assets/font/archivo-v25-latin-700.woff2") format("woff2");
+}
+
+/* archivo-800 - latin */
+@font-face {
+   font-display: swap;
+   font-family: "Archivo";
+   font-style: normal;
+   font-weight: 800;
+   src: url("/assets/font/archivo-v25-latin-800.woff2") format("woff2");
 }
